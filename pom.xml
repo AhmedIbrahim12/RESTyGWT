@@ -34,8 +34,8 @@
 		</dependency>
 
 		<dependency>
-			<groupId>com.booking</groupId>
-			<artifactId>Booker</artifactId>
+			<groupId>com.restyGWT-backend</groupId>
+			<artifactId>RESTyGWT-backend</artifactId>
 			<version>0.0.1-SNAPSHOT</version>
 		</dependency>
 

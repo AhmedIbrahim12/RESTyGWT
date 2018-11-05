@@ -8,8 +8,6 @@ import org.fusesource.restygwt.client.MethodCallback;
 
 import com.google.gwt.core.client.EntryPoint;
 import com.google.gwt.core.client.GWT;
-import com.google.gwt.event.dom.client.ClickEvent;
-import com.google.gwt.event.dom.client.ClickHandler;
 import com.google.gwt.user.client.ui.Button;
 import com.google.gwt.user.client.ui.DialogBox;
 import com.google.gwt.user.client.ui.HTML;
@@ -17,7 +15,7 @@ import com.google.gwt.user.client.ui.Label;
 import com.google.gwt.user.client.ui.RootPanel;
 import com.google.gwt.user.client.ui.TextBox;
 import com.google.gwt.user.client.ui.VerticalPanel;
-import com.restTrial.shared.User;
+import com.restyGWT.dto.User;
 
 public class RESTyGWT implements EntryPoint {
 	private static final String SERVER_ERROR = "An error occurred while "
@@ -54,14 +52,10 @@ public class RESTyGWT implements EntryPoint {
 		dialogVPanel.add(dialogCloseButton);
 		dialogBox.setWidget(dialogVPanel);
 
-		dialogCloseButton.addClickHandler(new ClickHandler() {
-
-			@Override
-			public void onClick(ClickEvent event) {
-				dialogBox.hide();
-				saveButton.setEnabled(true);
-				saveButton.setFocus(true);
-			}
+		dialogCloseButton.addClickHandler(event -> {
+			dialogBox.hide();
+			saveButton.setEnabled(true);
+			saveButton.setFocus(true);
 		});
 	}
 

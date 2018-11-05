@@ -10,7 +10,7 @@ import javax.ws.rs.QueryParam;
 import org.fusesource.restygwt.client.MethodCallback;
 import org.fusesource.restygwt.client.RestService;
 
-import com.restTrial.shared.User;
+import com.restyGWT.dto.User;
 
 @Path("http://localhost:8088")
 public interface UserService extends RestService {
