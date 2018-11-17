@@ -12,7 +12,7 @@ import org.fusesource.restygwt.client.RestService;
 
 import com.restyGWT.dto.User;
 
-@Path("http://localhost:8088")
+@Path("http://localhost:8088/users")
 public interface UserService extends RestService {
 	@POST
 	@Path("/addUser")
